@@ -1,0 +1,40 @@
+[package]
+name = "hackme"
+description = "Track the submissions of a Hacker News user and notify on comments"
+readme = "README.md"
+repository = "https://github.com/developer-friendly/hackme"
+documentation = "https://docs.rs/hackme"
+authors = ["Meysam <meysam@developer-friendly.com>"]
+keywords = [
+  "cli",
+  "productivity",
+  "http",
+  "terminal",
+  "utility",
+]
+categories = [
+  "command-line-utilities",
+  "web-programming",
+]
+include = [
+  "src",
+  "Cargo.toml",
+]
+
+license = "Apache-2.0"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+
+[dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
